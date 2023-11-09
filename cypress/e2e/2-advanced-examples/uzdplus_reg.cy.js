@@ -1,0 +1,33 @@
+describe('Uzdigital', () => {
+    it ('Registration', () => {
+        console.log(cy)
+        cy.visit('https://uzdplus.uz/registration')
+        cy.get('.Index_input__U5hFk').type('975825555')
+        cy.get('#loginButton').click()
+        cy.get('[data-testid="character-0"]').type('700500')
+    })
+    it ('Registration', () => {
+        console.log(cy)
+        cy.visit('https://uzdplus.uz/registration')
+        cy.get('.Index_input__U5hFk').type('         ')
+        cy.get('#loginButton').click()
+    })
+    it ('Registration', () => {
+        console.log(cy)
+        cy.visit('https://uzdplus.uz/registration')
+        cy.get('.Index_input__U5hFk').type('975825555')
+        cy.get('#loginButton').click()
+        cy.get('[data-testid="character-0"]').type('238304')
+    })
+    it ('Registration', () => {
+        console.log(cy)
+        cy.visit('https://uzdplus.uz/registration')
+        cy.get('.Index_input__U5hFk').type('975824455')
+        cy.get('#loginButton').click()
+        cy.get('.border').click()
+        cy.get('#loginButton').click()
+        cy.get('[data-testid="character-0"]').type('700500')
+        cy.get('.Index_input__U5hFk').type('       ')
+        cy.get('.Index_buttonsubmit__2rE0S').click()
+    })
+})
